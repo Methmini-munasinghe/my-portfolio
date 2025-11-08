@@ -6,7 +6,7 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import "./Home.css";
 
-import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsArrowDownCircle } from "react-icons/bs";
 
