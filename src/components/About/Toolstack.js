@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Chrome from "../../Assets/TechIcons/Google Chrome.svg";
 import VSCode from "../../Assets/TechIcons/vscode.svg";
