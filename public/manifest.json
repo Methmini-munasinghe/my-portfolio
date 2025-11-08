@@ -1,0 +1,16 @@
+{
+  "short_name": "Methmini",
+  "name": "Methmini Munasinghe | Portfolio",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512 256x256 128x128 64x64 32x32 16x16",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#9b5de5",
+  "background_color": "#ffffff",
+  "description": "Personal portfolio website of Methmini Munasinghe, built with React.js showcasing projects, skills, and resume."
+}

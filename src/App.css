@@ -1,0 +1,92 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Project Cards Layout Fix */
+.project-card-view {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 550px; /* consistent card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card-view:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(138, 43, 226, 0.3);
+}
+
+/* Image container */
+.project-image-container {
+  width: 100%;
+  height: 220px; /* fixed height for all project images */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Image itself */
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures images fill area nicely */
+  transition: transform 0.4s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+/* Headings */
+.project-heading {
+  text-align: center;
+  color: #fff;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.purple {
+  color: #a78bfa;
+}
