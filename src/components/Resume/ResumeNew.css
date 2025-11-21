@@ -1,0 +1,42 @@
+.cv-button {
+  max-width: 150px; 
+  text-align: center;
+  padding: 8px 15px; 
+  color: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 14px;
+}
+
+/* Default colors for each button */
+.mern-button {
+  background: #65087c; /* purple */
+}
+
+.uiux-button {
+  background: #87197c; /* deep magenta */
+}
+
+.bottom-button {
+  background: #950dfd; /* violet */
+}
+
+/* Hover colors */
+.mern-button:hover {
+  background: #7c33c4; /* brighter purple */
+  transform: translateY(-2px);
+}
+
+.uiux-button:hover {
+  background: #a023bf; /* brighter magenta */
+  transform: translateY(-2px);
+}
+
+.bottom-button:hover {
+  background: #ac33ff; /* brighter violet */
+  transform: translateY(-2px);
+}
