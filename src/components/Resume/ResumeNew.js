@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/my_CV_S.pdf"; // Updated PDF file
+import pdf from "../../Assets/my_CV_S.pdf"; 
+import pdf1 from "../../Assets/my_CV_M.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -20,17 +21,38 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+<Row 
+  style={{ 
+    justifyContent: "center", 
+    alignItems: "center",
+    gap: "20px",   
+    marginBottom: "20px"
+  }}
+>
+
+  <Button
+    variant="primary"
+    href={pdf}
+    target="_blank"
+    style={{ maxWidth: "250px" }}
+  >
+    <AiOutlineDownload />
+    &nbsp;MERN Stack Developer 
+    <br /> Download CV
+  </Button>
+
+  <Button
+    variant="primary"
+    href={pdf1}
+    target="_blank"
+    style={{ maxWidth: "250px" }}
+  >
+    <AiOutlineDownload />
+    &nbsp;UI/UX Engineer 
+    <br /> Download CV
+  </Button>
+
+</Row>
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
